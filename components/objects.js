@@ -28,11 +28,9 @@ var img_4911 = {img:"/assets/rotated/PHOTO_4911.jpg"};
 var img_4912 = {img:"/assets/rotated/PHOTO_4912.jpg"};
 var img_4913 = {img:"/assets/rotated/PHOTO_4913.jpg"};
 var img_4914 = {img:"/assets/photos/PHOTO_4914.jpg"};
-
 var img_4915 = {img:"/assets/photos/PHOTO_4915.jpg"};
 var img_4916 = {img:"/assets/rotated/PHOTO_4916.jpg"};
 var img_4917 = {img:"/assets/rotated/PHOTO_4917.jpg"};
-
 
 var img_4385 = {img:"/assets/rotated/PHOTO_4385.jpg"};
 var img_4386 = {img:"/assets/rotated/PHOTO_4386.jpg"};
