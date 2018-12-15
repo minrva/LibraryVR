@@ -71,7 +71,7 @@ AFRAME.registerComponent('set-image', {
                     document.getElementById('goBackwardLink').setAttribute("visible", true);
                     //document.querySelector('#image-backward').setAttribute("material", "src", current['backward'].img);
                 }
-            }, data.dur/3);
+            }, data.dur);
         }
     });
   },
