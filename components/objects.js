@@ -1,7 +1,6 @@
-var img_4884 = {img:"/assets/photos/PHOTO_4884.jpg"};
+var img_4884 = {img:"/assets/rotated/PHOTO_4884.jpg"};
 var img_4885 = {img:"/assets/photos/PHOTO_4885.jpg"};
 var img_4886 = {img:"/assets/photos/PHOTO_4886.jpg"};
-var img_4887 = {img:"/assets/photos/PHOTO_4887.jpg"};
 var img_4888 = {img:"/assets/photos/PHOTO_4888.jpg"};
 var img_4889 = {img:"/assets/photos/PHOTO_4889.jpg"};
 var img_4890 = {img:"/assets/photos/PHOTO_4890.jpg"};
@@ -47,11 +46,27 @@ var img_4398 = {img:"/assets/rotated/PHOTO_4398.jpg"};
 var img_4399 = {img:"/assets/rotated/PHOTO_4399.jpg"};
 var img_4400 = {img:"/assets/rotated/PHOTO_4400.jpg"};
 var img_4401 = {img:"/assets/rotated/PHOTO_4401.jpg"};
+var img_4402 = {img:"/assets/rotated/PHOTO_4402.jpg"};
+var img_4403 = {img:"/assets/rotated/PHOTO_4403.jpg"};
+var img_4404 = {img:"/assets/rotated/PHOTO_4404.jpg"};
+var img_4405 = {img:"/assets/rotated/PHOTO_4405.jpg"};
+var img_4406 = {img:"/assets/rotated/PHOTO_4406.jpg"};
+var img_4407 = {img:"/assets/rotated/PHOTO_4407.jpg"};
+var img_4408 = {img:"/assets/rotated/PHOTO_4408.jpg"};
+var img_4409 = {img:"/assets/rotated/PHOTO_4409.jpg"};
+var img_4410 = {img:"/assets/rotated/PHOTO_4410.jpg"};
+var img_4411 = {img:"/assets/rotated/PHOTO_4411.jpg"};
+var img_4412 = {img:"/assets/rotated/PHOTO_4412.jpg"};
+var img_4413 = {img:"/assets/rotated/PHOTO_4413.jpg"};
+var img_4414 = {img:"/assets/rotated/PHOTO_4414.jpg"};
+var img_4415 = {img:"/assets/rotated/PHOTO_4415.jpg"};
+
+
 
 img_4884.right = img_4885;
 img_4884.left = null;
 img_4884.backward = null;
-img_4884.forward = null;
+img_4884.forward = img_4415;
 
 img_4885.right = img_4886;
 img_4885.left = img_4884;
@@ -279,12 +294,84 @@ img_4400.right = img_4399;
 img_4400.backward = null;
 img_4400.forward = null;
 
-img_4401.left = null;
+img_4401.left = img_4402;
 img_4401.right = img_4400;
 img_4401.backward = null;
 img_4401.forward = null;
 
+img_4402.left = img_4403;
+img_4402.right = img_4401;
+img_4402.backward = null;
+img_4402.forward = null;
 
+img_4403.left = img_4404;
+img_4403.right = img_4402;
+img_4403.backward = null;
+img_4403.forward = null;
+
+img_4404.left = img_4405;
+img_4404.right = img_4403;
+img_4404.backward = null;
+img_4404.forward = null;
+
+img_4405.left = img_4406;
+img_4405.right = img_4404;
+img_4405.backward = null;
+img_4405.forward = null;
+
+img_4406.left = null;
+img_4406.right = img_4405;
+img_4406.backward = img_4407;
+img_4406.forward = null;
+
+img_4407.left = null;
+img_4407.right = null;
+img_4407.backward = img_4408;
+img_4407.forward = img_4406;
+
+img_4408.left = null;
+img_4408.right = null;
+img_4408.backward = img_4409;
+img_4408.forward = img_4407;
+
+img_4409.left = null;
+img_4409.right = null;
+img_4409.backward = img_4410;
+img_4409.forward = img_4408;
+
+img_4410.left = null;
+img_4410.right = null;
+img_4410.backward = img_4411;
+img_4410.forward = img_4409;
+
+img_4411.left = null;
+img_4411.right = null;
+img_4411.backward = img_4412;
+img_4411.forward = img_4410;
+
+img_4412.left = null;
+img_4412.right = null;
+img_4412.backward = img_4413;
+img_4412.forward = img_4411;
+
+img_4413.left = null;
+img_4413.right = null;
+img_4413.backward = img_4414;
+img_4413.forward = img_4412;
+
+img_4414.left = null;
+img_4414.right = null;
+img_4414.backward = img_4415;
+img_4414.forward = img_4413;
+
+img_4415.left = null;
+img_4415.right = null;
+img_4415.backward = img_4884;
+img_4415.forward = img_4414;
+
+// var start;
+//
+// var current;
 var start = img_4889;
 
 var current = start;

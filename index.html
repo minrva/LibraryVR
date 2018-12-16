@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>360&deg; Image Gallery</title>
+    <title>360&deg; UGL Tour</title>
     <meta name="description" content="360&deg; Image Gallery - A-Frame">
     <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
     <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
@@ -12,41 +12,13 @@
     <script src="components/objects.js"></script>
     <script src="components/set-image.js"></script>
 
-    <script>
-        function newImage(direction) {
-            // console.log(current);
-            // if(direction == "right") {
-            //     document.getElementById('next-image').src=current.right.img;
-            //     document.getElementById('image-next').visible = "true";
-            //     document.getElementById('image-current').visible = "false";
-            //     //document.querySelector('#image-361').emit('transition');
-            //     //document.querySelector('#image-362').emit('transition');
-            // } else if(direction == "left") {
-            //     document.getElementById('next-image').src=current.left.img;
-            //     document.getElementById('image-next').visible = "true";
-            //     document.getElementById('image-current').visible = "false";
-            //
-            //     //document.querySelector('#image-361').emit('transition');
-            //     //document.querySelector('#image-363').emit('transition');
-            // } else if(direction == "forward") {
-            //
-            // } else if(direction == "backward") {
-            //
-            // }
 
-        }
-    </script>
   </head>
   <body>
     <a-scene>
       <a-assets>
         <img id="arrow-thumb" crossorigin="anonymous" src="assets/arrow.png">
-        <img id="this-image" crossorigin="anonymous" src="assets/photos/PHOTO_4889.jpg">
-        <img id="right-image" crossorigin="anonymous" src="assets/photos/PHOTO_4890.jpg">
-        <img id="left-image" crossorigin="anonymous" src="assets/photos/PHOTO_4888.jpg">
-        <img id="forward-image" crossorigin="anonymous" src="assets/arrow.png">
-        <img id="backward-image" crossorigin="anonymous" src="assets/arrow.png">
-
+        <img id="this-image" crossorigin="anonymous" src="/assets/photos/PHOTO_4889.jpg">
 
         <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
 
@@ -65,47 +37,21 @@
       </a-assets>
 
       <!-- 360-degree image. -->
-          <a-sky id="image-current" radius="10" src="#this-image">
-              <!--<a-animation attribute="material.opacity" dur="5000" begin="transition" to="0"></a-animation>-->
-          </a-sky>
-
-
-<!--
-          <a-sky id="image-right" radius="10" src="#right-image" visible="false">
-              <a-animation attribute="material.opacity" dur="5000" begin="transition" to="1"></a-animation>
-              <a-animation attribute="visible" dur="5000" begin="transition" to="true"></a-animation>
-          </a-sky>
-
-          <a-sky id="image-left" radius="10" src="#left-image" visible="false">
-              <a-animation attribute="material.opacity" dur="5000" begin="transition" to="1"></a-animation>
-              <a-animation attribute="visible" dur="5000" begin="transition" to="true"></a-animation>
-          </a-sky>
-
-          <a-sky id="image-forward" radius="10" src="#forward-image" visible="false">
-              <a-animation attribute="material.opacity" dur="5000" begin="transition" to="1"></a-animation>
-              <a-animation attribute="visible" dur="5000" begin="transition" to="true"></a-animation>
-          </a-sky>
-
-          <a-sky id="image-backward" radius="10" src="#backward-image" visible="false">
-              <a-animation attribute="material.opacity" dur="5000" begin="transition" to="1"></a-animation>
-              <a-animation attribute="visible" dur="5000" begin="transition" to="true"></a-animation>
-          </a-sky>
--->
+          <a-sky id="image-current" radius="10" src="#this-image"></a-sky>
 
       <!-- Image links. -->
-          <a-entity id="goRightLink" layout="type: line; margin: 1.5" position="-4 -2 0" rotation="0 90 0">
+          <a-entity id="goRightLink" layout="type: line; margin: 1.5" position="-6 -1.2 0" rotation="0 90 0">
             <a-entity template="src: #link" data-src="#arrow-right" data-thumb="#arrow-thumb"></a-entity>
           </a-entity>
-          <a-entity id="goLeftLink" layout="type: line; margin: 1.5" position="4 -2 0" rotation="0 270 0">
+          <a-entity id="goLeftLink" layout="type: line; margin: 1.5" position="6 -1.2 0" rotation="0 270 0">
             <a-entity template="src: #link" data-src="#arrow-left" data-thumb="#arrow-thumb"></a-entity>
           </a-entity>
-          <a-entity id="goForwardLink" layout="type: line; margin: 1.5" position="0 -2 4" rotation="0 180 0" visible="false">
+          <a-entity id="goForwardLink" layout="type: line; margin: 1.5" position="0 -1.2 6" rotation="0 180 0" visible="false">
             <a-entity template="src: #link" data-src="#arrow-forward" data-thumb="#arrow-thumb"></a-entity>
           </a-entity>
-          <a-entity id="goBackwardLink" layout="type: line; margin: 1.5" position="0 -2 -4" rotation="0 0 0" visible="false">
+          <a-entity id="goBackwardLink" layout="type: line; margin: 1.5" position="0 -1.2 -6" rotation="0 0 0" visible="false">
             <a-entity template="src: #link" data-src="#arrow-backward" data-thumb="#arrow-thumb"></a-entity>
           </a-entity>
-
 
       <!-- Camera + cursor. -->
       <a-entity camera look-controls id="camera">
