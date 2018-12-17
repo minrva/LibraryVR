@@ -65,7 +65,7 @@ AFRAME.registerComponent('set-image', {
       dir: 'alternate',
       dur: data.dur,
       from: '#FFF',
-      to: '#888'
+      to: '#000'
     });
   }
 });
