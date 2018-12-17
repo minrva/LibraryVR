@@ -78,7 +78,6 @@ img_4886.left = img_4885;
 img_4886.backward = null;
 img_4886.forward = null;
 
-
 img_4888.right = img_4889;
 img_4888.left = img_4886;
 img_4888.backward = null;
@@ -369,9 +368,5 @@ img_4415.right = null;
 img_4415.backward = img_4884;
 img_4415.forward = img_4414;
 
-// var start;
-//
-// var current;
 var start = img_4889;
-
 var current = start;
